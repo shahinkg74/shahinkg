@@ -1,0 +1,83 @@
+{% load static %}
+<!-- section contact -->
+	<section id="contact">
+
+		<div class="container">
+
+			<!-- section title -->
+			<h2 class="section-title wow fadeInUp">در تماس باشید</h2>
+
+			<div class="spacer" data-height="60" style="height: 60px;"></div>
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<!-- contact info -->
+					<div class="contact-info">
+						<h3 class="wow fadeInUp">بیایید در مورد همه چیز صحبت کنیم!</h3>
+						<p class="wow fadeInUp">فرم ها را دوست ندارید؟ یک <a href="mailto:name@example.com">ایمیل</a>
+  بفرست.
+👋</p>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<!-- Contact Form -->
+					<form id="contact-form" class="contact-form mt-6" method="post" action="form/contact.php">
+
+						<div class="messages"></div>
+
+						<div class="row">
+							<div class="column col-md-6">
+								<!-- Name input -->
+								<div class="form-group">
+									<input type="text" class="form-control" name="InputName" id="InputName" placeholder="نام و نام خانوادگی" required="required" data-error="ثبت نام و نام خانوادگی الزامی می باشد.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-6">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="ایمیل" required="required" data-error="ثبت ایمیل الزامی می باشد.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-12">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="موضوع" required="required" data-error="ثبت موضوع الزامی می باشد.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-12">
+								<!-- Message textarea -->
+								<div class="form-group">
+									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="پیام" required="required" data-error="ثبت پیام الزامی می باشد."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">ارسال پیام</button><!-- Send Button -->
+
+					</form>
+					<!-- Contact Form end -->
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+    <div class="spacer" data-height="96"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="copyright">© حق نشر محفوظ است.</span>
+        </div>
+    </footer>
+

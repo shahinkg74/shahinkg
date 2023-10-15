@@ -1,0 +1,83 @@
+{% load static %}
+<!-- section blog -->
+	<section id="blog">
+
+		<div class="container">
+
+			<!-- section title -->
+			<h2 class="section-title wow fadeInUp">پستهای اخیر</h2>
+
+			<div class="spacer" data-height="60" style="height: 60px;"></div>
+
+			<div class="row blog-wrapper">
+
+				<div class="col-md-4">
+					<!-- blog item -->
+					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+						<div class="thumb">
+							<a href=" #blog ">
+								<span class="category">بررسی</span>
+							</a>
+							<a href=" #blog">
+								<img src="{% static 'images/blog/1.svg' %}"  alt="blog-title" />
+							</a>
+						</div>
+						<div class="details">
+                            {% for items in all %}
+							<h4 class="my-0 title"><a href="#">{{items.title}}</a></h4>
+                            {% endfor %}
+							<ul class="list-inline meta mb-0 mt-2">
+								<li class="list-inline-item">02 اردیبهشت 1399</li>
+								<li class="list-inline-item">بولبی</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- blog item -->
+					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+						<div class="thumb">
+							<a href="#blog ">
+								<span class="category">آموزش</span>
+							</a>
+							<a href=" #blog">
+								<img src="{% static 'images/blog/2.svg' %}" alt="blog-title" />
+							</a>
+						</div>
+						<div class="details">
+							<h4 class="my-0 title"><a href="#">تصورات غلط رایج درباره پرداخت</a></h4>
+							<ul class="list-inline meta mb-0 mt-2">
+								<li class="list-inline-item">27 فروردین 1399</li>
+								<li class="list-inline-item">بولبی</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- blog item -->
+					<div class="blog-item rounded bg-white shadow-dark wow fadeIn">
+						<div class="thumb">
+							<a href=" #blog">
+								<span class="category">کسب و کار</span>
+							</a>
+							<a href="#blog ">
+								<img src="{% static 'images/blog/3.svg' %}" alt="blog-title" />
+							</a>
+						</div>
+						<div class="details">
+							<h4 class="my-0 title"><a href="{% block blog %} #blog {% endblock %}">3 چیزی که باید درباره کسب و کار نوپا بدانید</a></h4>
+							<ul class="list-inline meta mb-0 mt-2">
+								<li class="list-inline-item">19 فروردین 1399</li>
+								<li class="list-inline-item">بولبی</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
